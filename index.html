@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más allá del cielo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- MENÚ DE NAVEGACIÓN -->
+
+<header>
+    <nav>
+        <button class="nav-boton activo" onclick="mostrarPagina('pagina1', this)">PÁGINA 1</button>
+        <button class="nav-boton" onclick="mostrarPagina('pagina2', this)">PÁGINA 2</button>
+        <button class="nav-boton" onclick="mostrarPagina('pagina3', this)">PÁGINA 3</button>
+        <button class="nav-boton" onclick="mostrarPagina('pagina4', this)">PÁGINA 4</button>
+    </nav>
+</header>
+
+
+<!-- PÁGINA 1: INICIO -->
+
+<section id="pagina1" class="seccion-pagina inicio activa">
+
+    <div class="contenido-inicio">
+
+        <p class="subtitulo">UN VIAJE POR EL ESPACIO</p>
+
+        <h1>EL UNIVERSO</h1>
+
+        <h2>ESTRELLAS Y CONSTELACIONES</h2>
+
+        <p class="introduccion">
+            ¿Alguna vez te has preguntado qué secretos
+            esconden las constelaciones?
+        </p>
+
+        <p>
+            El universo es un lugar lleno de misterios,
+            luces y maravillas que esperan ser descubiertas.
+            Acompáñanos en este viaje para conocer los
+            increíbles secretos que existen más allá
+            de nuestro planeta.
+        </p>
+
+        <h3>MÁS ALLÁ DEL CIELO</h3>
+
+        <button class="boton" onclick="mostrarPagina('pagina2')">
+            COMENZAR VIAJE
+        </button>
+
+    </div>
+
+    <img src="img/telescopio.png"
+         class="imagen-inicio"
+         alt="Telescopio observando el universo">
+
+</section>
+
+
+<!-- PÁGINA 2: CONOCIENDO EL UNIVERSO -->
+
+<section id="pagina2" class="seccion-pagina pagina">
+
+    <h1>CONOCIENDO EL UNIVERSO</h1>
+
+    <p class="descripcion">
+        Descubre algunos de los elementos más fascinantes
+        del espacio. Toca cada apartado para conocer más.
+    </p>
+
+    <div class="contenedor-temas">
+
+        <!-- TEMA 1 -->
+
+        <div class="tema">
+
+            <button class="tema-boton" onclick="mostrarTema(1)">
+                ¿QUÉ SON LAS ESTRELLAS?
+                <span>+</span>
+            </button>
+
+            <div class="tema-contenido" id="tema1">
+
+                <p>
+                    Las estrellas son enormes esferas de gas
+                    muy caliente que producen su propia luz
+                    y energía. Están formadas principalmente
+                    por hidrógeno y helio. El Sol es la estrella
+                    más cercana a nuestro planeta y es
+                    fundamental para la vida.
+                </p>
+
+                <img src="img/estrellas.jpg"
+                     alt="Estrellas brillantes en el espacio">
+
+            </div>
+
+        </div>
+
+
+        <!-- TEMA 2 -->
+
+        <div class="tema">
+
+            <button class="tema-boton" onclick="mostrarTema(2)">
+                ¿QUÉ SON LAS CONSTELACIONES?
+                <span>+</span>
+            </button>
+
+            <div class="tema-contenido" id="tema2">
+
+                <p>
+                    Las constelaciones son agrupaciones
+                    aparentes de estrellas que, vistas desde
+                    la Tierra, parecen formar figuras.
+                    Desde la antigüedad, las personas las
+                    han utilizado para orientarse, crear
+                    historias y reconocer el cielo nocturno.
+                </p>
+
+                <img src="img/constelaciones.jpg"
+                     alt="Constelaciones del cielo nocturno">
+
+            </div>
+
+        </div>
+
+
+        <!-- TEMA 3 -->
+
+        <div class="tema">
+
+            <button class="tema-boton" onclick="mostrarTema(3)">
+                ¿CÓMO NACEN LAS ESTRELLAS?
+                <span>+</span>
+            </button>
+
+            <div class="tema-contenido" id="tema3">
+
+                <p>
+                    Las estrellas nacen dentro de enormes
+                    nubes de gas y polvo llamadas nebulosas.
+                    La gravedad reúne este material y,
+                    cuando el centro alcanza las condiciones
+                    necesarias, comienza la fusión nuclear
+                    y nace una nueva estrella.
+                </p>
+
+                <img src="img/nebulosa.jpg"
+                     alt="Nebulosa donde nacen las estrellas">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PÁGINA 3: ESTRELLAS Y CONSTELACIONES -->
+
+<section id="pagina3" class="seccion-pagina pagina pagina-clara">
+
+    <h1>ESTRELLAS Y CONSTELACIONES</h1>
+
+    <p class="descripcion">
+        El espacio guarda curiosidades que hacen aún
+        más interesante observar el cielo.
+    </p>
+
+    <div class="tarjetas">
+
+        <!-- TARJETA 1 -->
+
+        <div class="tarjeta">
+
+            <img src="img/sol.jpg" alt="El Sol">
+
+            <h2>EL SOL</h2>
+
+            <p>
+                El Sol es una estrella que se encuentra
+                en el centro de nuestro sistema solar.
+                Su luz y calor permiten que exista vida
+                en la Tierra. Tiene aproximadamente
+                4,600 millones de años.
+            </p>
+
+        </div>
+
+
+        <!-- TARJETA 2 -->
+
+        <div class="tarjeta">
+
+            <img src="img/estrella.jpg" alt="Estrella brillante">
+
+            <h2>VIDA DE LAS ESTRELLAS</h2>
+
+            <p>
+                Las estrellas pueden vivir millones o
+                miles de millones de años. Su duración
+                depende de su masa. Algunas terminan
+                convirtiéndose en enanas blancas y otras
+                pueden explotar como supernovas.
+            </p>
+
+        </div>
+
+
+        <!-- TARJETA 3 -->
+
+        <div class="tarjeta">
+
+            <img src="img/orion.jpg" alt="Constelación de Orión">
+
+            <h2>CONSTELACIÓN DE ORIÓN</h2>
+
+            <p>
+                Orión es una de las constelaciones
+                más conocidas. Se reconoce fácilmente
+                por sus tres estrellas alineadas,
+                conocidas como el cinturón de Orión.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- DATO EXTRA -->
+
+    <div class="dato-extra">
+
+        <h2>¿SABÍAS QUE...?</h2>
+
+        <p>
+            Cuando observamos estrellas muy lejanas,
+            su luz ha viajado durante muchos años
+            antes de llegar a nuestros ojos.
+            ¡Por eso mirar el cielo también es mirar
+            al pasado!
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PÁGINA 4: DATOS Y COMENTARIOS -->
+
+<section id="pagina4" class="seccion-pagina pagina">
+
+    <h1>DATOS CURIOSOS DEL UNIVERSO</h1>
+
+    <p class="descripcion">
+        Conoce algunas estrellas y constelaciones famosas.
+    </p>
+
+
+    <!-- TABLA -->
+
+    <div class="tabla-contenedor">
+
+        <table>
+
+            <tr>
+                <th>Nombre</th>
+                <th>Tiempo de vida</th>
+                <th>Características</th>
+            </tr>
+
+            <tr>
+                <td>El Sol</td>
+                <td>Aproximadamente 10 mil millones de años</td>
+                <td>Es la estrella de nuestro sistema solar.</td>
+            </tr>
+
+            <tr>
+                <td>Sirio</td>
+                <td>Depende de su evolución estelar</td>
+                <td>Es la estrella más brillante del cielo nocturno terrestre.</td>
+            </tr>
+
+            <tr>
+                <td>Orión</td>
+                <td>No aplica</td>
+                <td>Es una constelación reconocida por sus tres estrellas alineadas.</td>
+            </tr>
+
+            <tr>
+                <td>Osa Mayor</td>
+                <td>No aplica</td>
+                <td>Es una constelación que contiene el famoso asterismo del Carro.</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- COMENTARIOS -->
+
+    <div class="comentarios">
+
+        <h2>¿QUÉ MÁS TE GUSTARÍA SABER?</h2>
+
+        <p>
+            Déjanos tu pregunta, opinión o comentario
+            sobre el universo.
+        </p>
+
+        <div class="formulario">
+
+            <textarea id="comentario"
+                placeholder="Escribe aquí tu comentario..."></textarea>
+
+            <button onclick="enviarComentario()">
+                ENVIAR
+            </button>
+
+        </div>
+
+        <p id="mensaje"></p>
+
+        <div id="comentarios-enviados"></div>
+
+    </div>
+
+
+    <!-- INFORMACIÓN DE LA CREADORA -->
+
+    <div class="creadora">
+
+        <h2>INFORMACIÓN DE LA CREADORA</h2>
+
+        <div class="icono-creadora">
+            <span>★</span>
+        </div>
+
+        <p class="nombre">
+            Hernandez Martinez Andrea Sarahí
+        </p>
+
+        <p>
+            <strong>Programadora:</strong> Andrea Sarahí
+        </p>
+
+        <p>
+            <strong>Grupo:</strong> 5A Programación
+        </p>
+
+        <p>
+            <strong>Correo:</strong> andy.shm@gmail.com
+        </p>
+
+        <p>
+            <strong>Teléfono:</strong> 123456789
+        </p>
+
+        <p>
+            <strong>Proyecto:</strong> Más allá del cielo
+        </p>
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>Más allá del cielo</p>
+
+        <p>Explorando los misterios del universo</p>
+
+    </footer>
+
+</section>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+// CAMBIAR ENTRE LAS CUATRO PÁGINAS
+
+function mostrarPagina(id, boton) {
+
+    document.querySelectorAll(".seccion-pagina").forEach(function(pagina) {
+        pagina.classList.remove("activa");
+    });
+
+    document.getElementById(id).classList.add("activa");
+
+    document.querySelectorAll(".nav-boton").forEach(function(elemento) {
+        elemento.classList.remove("activo");
+    });
+
+    if (boton) {
+        boton.classList.add("activo");
+    } else {
+        document.querySelectorAll(".nav-boton").forEach(function(elemento) {
+            if (elemento.getAttribute("onclick").includes(id)) {
+                elemento.classList.add("activo");
+            }
+        });
+    }
+
+    window.scrollTo(0, 0);
+}
+
+
+// MOSTRAR INFORMACIÓN E IMAGEN DE LA PÁGINA 2
+
+function mostrarTema(numero) {
+
+    let contenido = document.getElementById("tema" + numero);
+
+    let abierto = contenido.classList.contains("activo");
+
+    document.querySelectorAll(".tema-contenido").forEach(function(elemento) {
+        elemento.classList.remove("activo");
+    });
+
+    document.querySelectorAll(".tema-boton span").forEach(function(elemento) {
+        elemento.textContent = "+";
+    });
+
+    if (!abierto) {
+
+        contenido.classList.add("activo");
+
+        let boton = contenido.previousElementSibling;
+
+        boton.querySelector("span").textContent = "−";
+
+    }
+
+}
+
+
+// AGREGAR COMENTARIOS SIN BASE DE DATOS
+
+function enviarComentario() {
+
+    let comentario = document.getElementById("comentario").value.trim();
+
+    let mensaje = document.getElementById("mensaje");
+
+    if (comentario === "") {
+
+        mensaje.textContent = "Por favor, escribe un comentario.";
+
+        return;
+    }
+
+    let nuevoComentario = document.createElement("p");
+
+    nuevoComentario.textContent = "• " + comentario;
+
+    nuevoComentario.classList.add("comentario-item");
+
+    document.getElementById("comentarios-enviados").appendChild(nuevoComentario);
+
+    document.getElementById("comentario").value = "";
+
+    mensaje.textContent = "¡Tu comentario se agregó correctamente!";
+
+}
+
+</script>
+
+</body>
+</html>
